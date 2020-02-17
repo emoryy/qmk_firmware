@@ -42,7 +42,7 @@ qk_tap_dance_action_t tap_dance_actions[] = {
 //In Layer declaration, add tap dance item in place of a key code
 
 
-
+#define K_MYCPT KC_MY_COMPUTER
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[0] = LAYOUT_ortho_5x15(
@@ -56,8 +56,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_ESC,   KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,   KC_F9,    KC_F10,   KC_F11,   KC_F12,   KC_INS,   RESET,
     _______,  _______,  _______,  _______,  _______,  _______,  KC_KP_7,  KC_KP_8,  KC_KP_9, RGB_SPD,  RGB_M_R,  RGB_SPI,  KC_PSCR,  KC_SLCK,  KC_PAUS,
     KC_NLCK,  _______,  _______,  _______,  _______,  _______,  KC_KP_4,  KC_KP_5,  KC_KP_6, RGB_VAD,  RGB_M_P,  RGB_VAI,  _______,  _______,  _______,
-    _______,  _______,  _______,  KC_PSLS,  KC_PAST,  KC_PMNS,  KC_KP_1,  KC_KP_2,  KC_KP_3, RGB_SAD,  RGB_TOG,  RGB_SAI,  KC_MUTE,  KC_VOLU,  _______,
-    _______,  _______,  _______,  _______,  MO(1),    KC_PPLS,  _______,  _______,  _______, RGB_HUD,  MO(1),    RGB_HUI,  RGB_RMOD, KC_VOLD,  RGB_MOD
+    _______,  K_MYCPT,  _______,  KC_PSLS,  KC_PAST,  _______,  KC_KP_1,  KC_KP_2,  KC_KP_3, RGB_SAD,  RGB_TOG,  RGB_SAI,  KC_MUTE,  KC_VOLU,  _______,
+    _______,  _______,  _______,  KC_PMNS,  MO(1),    KC_PPLS,  _______,  _______,  _______, RGB_HUD,  MO(1),    RGB_HUI,  RGB_RMOD, KC_VOLD,  RGB_MOD
   )
 };
 
